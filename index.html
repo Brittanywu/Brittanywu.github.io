@@ -51,6 +51,190 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Array Methods" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/12/Array%20Methods/" class="article-date">
+  <time class="dt-published" datetime="2024-10-11T16:46:39.000Z" itemprop="datePublished">2024-10-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/leetcode/">leetcode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/12/Array%20Methods/">Array methods</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h1><h2 id="704-Binary-Search"><a href="#704-Binary-Search" class="headerlink" title="704. Binary Search"></a>704. Binary Search</h2><p>二分查找两种写法,按不同区间来区分</p>
+<ol>
+<li><p>target -&gt; [left,right]</p>
+</li>
+<li><p>target -&gt; [left,right)</p>
+</li>
+</ol>
+<p>区别：</p>
+<ul>
+<li><p>定义right：1. len(nums)-1 2.len(nums)</p>
+</li>
+<li><p>1的left&#x3D;right有意义，所以写循环的时候要注意边界 while(left&lt;&#x3D;right)，同理2的循环是小于号</p>
+</li>
+</ul>
+<h3 id="易错点"><a href="#易错点" class="headerlink" title="易错点"></a>易错点</h3><p>切换指针时候: left&#x3D;middle+1 &#x2F; right&#x3D;middle-1</p>
+<h1 id="双指针法"><a href="#双指针法" class="headerlink" title="双指针法"></a>双指针法</h1><h2 id="27-Remove-Element-slow-fast"><a href="#27-Remove-Element-slow-fast" class="headerlink" title="27. Remove Element - slow&#x2F;fast"></a>27. Remove Element - slow&#x2F;fast</h2><p>快慢指针，slow&#x2F;fast</p>
+<p>按顺序除去某个数</p>
+<p>slow:指向更新的新数组下标的位置</p>
+<p>fast：寻找新数组，即不含有目标元素的数组</p>
+<h2 id="209-Minimum-Size-Subarray-Sum-left-right"><a href="#209-Minimum-Size-Subarray-Sum-left-right" class="headerlink" title="209. Minimum Size Subarray Sum - left&#x2F;right"></a>209. Minimum Size Subarray Sum - left&#x2F;right</h2><p>左右指针，left&#x2F;right</p>
+<h3 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h3><p>定义无穷大数：inf_len&#x3D;float(‘inf’)</p>
+<p>reference: <a target="_blank" rel="noopener" href="https://programmercarl.com/">https://programmercarl.com/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://brittanywu.github.io/2024/10/12/Array%20Methods/" data-id="cm24zpf7b0001nri1c8oe3f27" data-title="Array methods" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/" rel="tag">leetcode</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Leetcode Journey" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/10/11/Leetcode%20Journey/" class="article-date">
+  <time class="dt-published" datetime="2024-10-11T15:23:24.000Z" itemprop="datePublished">2024-10-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/records/">records</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/10/11/Leetcode%20Journey/">Leetcode Journey</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <table>
+<thead>
+<tr>
+<th></th>
+<th align="left"></th>
+<th>题号</th>
+<th>难度</th>
+<th>时间</th>
+<th>方法</th>
+<th>注意事项</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数组（array）</td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>1</td>
+<td align="left">704. Binary Search</td>
+<td>704</td>
+<td>Easy</td>
+<td>2024-10-11</td>
+<td>二分查找</td>
+<td>注意边界left&#x2F;right&#x2F;middle</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>2</td>
+<td align="left">27. Remove Element</td>
+<td>27</td>
+<td>Easy</td>
+<td>2024-10-11</td>
+<td>双指针法</td>
+<td>快慢指针slow&#x2F;fast</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>3</td>
+<td align="left">977. Squares of a Sorted Array</td>
+<td>977</td>
+<td>Easy</td>
+<td>2024-10-11</td>
+<td>双指针法</td>
+<td>画图比较容易理解</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td>4</td>
+<td align="left">209. Minimum Size Subarray Sum</td>
+<td>209</td>
+<td>Medium</td>
+<td>2024-10-11</td>
+<td>双指针法</td>
+<td>滑动窗口（subarray）</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td></td>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://brittanywu.github.io/2024/10/11/Leetcode%20Journey/" data-id="cm24zpf7f000cnri10c0dhm5x" data-title="Leetcode Journey" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/leetcode/" rel="tag">leetcode</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-How to Use Hexo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/10/10/How%20to%20Use%20Hexo/" class="article-date">
@@ -77,7 +261,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>It’s a good trial to build my first blog using hexo and github! I believe this is a huge step in my programming trip. I will use this blog to record my studying process in computer science&#x2F;languages, maybe sometime I will share some life. What’s more I believe most of these records are written in English, while English for me is a big challenge but I believe it is a good way to practice my English skill!</p>
+        <p>It’s a good trial to build my first blog using hexo and github! I believe this is a huge step in my programming trip. I will use this blog to record my studying process in computer science&#x2F;languages, maybe sometime I will share some life. </p>
 <h1 id="Tips-to-use-hexo"><a href="#Tips-to-use-hexo" class="headerlink" title="Tips to use hexo"></a>Tips to use hexo</h1><ul>
 <li><p>my blog address: <a href="https://brittanywu.github.io/">https://brittanywu.github.io/</a></p>
 </li>
@@ -163,7 +347,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://brittanywu.github.io/2024/10/10/How%20to%20Use%20Hexo/" data-id="cm23e68ak000100v7ajun2id6" data-title="How to Use Hexo" class="article-share-link">Share</a>
+      <a data-url="https://brittanywu.github.io/2024/10/10/How%20to%20Use%20Hexo/" data-id="cm24zpf7f000bnri16d705dtt" data-title="How to Use Hexo" class="article-share-link">Share</a>
       
       
       
@@ -216,7 +400,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://brittanywu.github.io/2024/10/10/hello-world/" data-id="cm23e68al000300v726x21kgu" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="https://brittanywu.github.io/2024/10/10/hello-world/" data-id="cm24zpf7f000fnri18exl5zjo" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -236,7 +420,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/leetcode/" rel="tag">leetcode</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
     </div>
   </div>
 
@@ -246,7 +430,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/records/">records</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/records/">records</a></li></ul>
     </div>
   </div>
 
@@ -257,6 +441,14 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2024/10/12/Array%20Methods/">Array methods</a>
+          </li>
+        
+          <li>
+            <a href="/2024/10/11/Leetcode%20Journey/">Leetcode Journey</a>
+          </li>
         
           <li>
             <a href="/2024/10/10/How%20to%20Use%20Hexo/">How to Use Hexo</a>
